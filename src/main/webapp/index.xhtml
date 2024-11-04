@@ -41,8 +41,13 @@
                 <h:column>
                     <h:outputText value="#{item.quantity}"></h:outputText>
                 </h:column>                    
-            </h:dataTable>
+            </h:dataTable> 
+            <br />
+            <h:commandButton value="clean cart" 
+                             action="#{jsfPurchase.cleanCartList()}">
+         </h:commandButton>
         </h:form>
+         
     </h:body>
 </html>
 

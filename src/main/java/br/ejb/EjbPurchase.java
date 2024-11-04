@@ -39,5 +39,9 @@ public class EjbPurchase {
     public ArrayList<ItemPurchase> getAllProductOnCart () {
         return productsList;
     }
+    
+    public void cleanCart () {
+        productsList.clear();
+    }
 
 }

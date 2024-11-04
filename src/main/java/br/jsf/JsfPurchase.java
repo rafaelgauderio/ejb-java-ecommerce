@@ -33,4 +33,8 @@ public class JsfPurchase implements Serializable {
         return ejbPurchase.getAllProductOnCart();
     }
     
+    public void cleanCartList () {
+        ejbPurchase.cleanCart();
+    }
+    
 }
