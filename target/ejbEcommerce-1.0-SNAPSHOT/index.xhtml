@@ -18,6 +18,29 @@
                 <h:column>                    
                     <h:outputText value="#{product.description}"></h:outputText>
                 </h:column>
+                <h:column>
+                    <h:commandButton value="add to cart" 
+                                     action="#{jsfPurchase.addProduct(product)}">
+                        
+                    </h:commandButton>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+        
+        <br />
+        Shoping Cart
+        <h:form>
+            <h:dataTable border="1" cellpadding="2" cellspacing="0" 
+                         value="#{jsfPurchase.allProductsOnCart}" var="item">
+                <h:column>
+                    <h:outputText value="#{item.product.id}"></h:outputText>
+                </h:column>
+                <h:column>
+                    <h:outputText value="#{item.product.description}"></h:outputText>
+                </h:column>
+                <h:column>
+                    <h:outputText value="#{item.quantity}"></h:outputText>
+                </h:column>                    
             </h:dataTable>
         </h:form>
     </h:body>

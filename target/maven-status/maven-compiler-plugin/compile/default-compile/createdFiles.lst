@@ -1,3 +1,9 @@
+br\data\crud\CrudProduct.class
 br\resources\JavaEE8Resource.class
+br\jsf\JsfProduct.class
+br\jsf\JsfPurchase.class
 br\data\model\Product.class
+br\ejb\EbjProduct.class
+br\ejb\EjbPurchase.class
 br\JAXRSConfiguration.class
+br\data\model\ItemPurchase.class
