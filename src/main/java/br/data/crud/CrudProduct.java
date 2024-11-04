@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class CrudProduct {
     
     public ArrayList <Product>  getAllProducts () {
+        
         ArrayList productsList = new ArrayList<Product>();
         productsList.add(new Product(1, "8 gig ram memory"));
         productsList.add(new Product(2, "16 gig ram memory"));
