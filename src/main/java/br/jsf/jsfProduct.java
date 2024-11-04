@@ -1,7 +1,7 @@
 package br.jsf;
 
 import br.data.model.Product;
-import br.ejb.ebjProduct;
+import br.ejb.EbjProduct;
 import java.util.ArrayList;
 import javax.ejb.EJB;
 import javax.inject.Named;
@@ -14,12 +14,12 @@ import javax.enterprise.context.RequestScoped;
  */
 @Named(value = "jsfProduct")
 @RequestScoped
-public class jsfProduct {
+public class JsfProduct {
 
     @EJB
-    private ebjProduct ebjProduct;    
+    private EbjProduct ebjProduct;    
    
-    public jsfProduct() {
+    public JsfProduct() {
         
     }
     
